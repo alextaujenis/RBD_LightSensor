@@ -3,7 +3,7 @@ A simple library for photoresistors.
 
 ##Example Sketch
 0. Wire up a photoresistor to Arduino **pin A0**
-0. Load the [example.ino]() onto your Arduino
+0. Load the [example.ino](https://github.com/alextaujenis/LightSensor/blob/master/example/example.ino) onto your Arduino
 0. Connect to the serial prompt at **115200 BAUD**
 0. Watch a stream of the current light percentage
 
@@ -11,11 +11,11 @@ A simple library for photoresistors.
 
 ##Public Methods
 
-* [constructor(pin)]()
-* [value()]()
-* [percent()]()
-* [inverseValue()]()
-* [inversePercent()]()
+* [constructor(pin)](https://github.com/alextaujenis/LightSensor#constructorpin)
+* [value()](https://github.com/alextaujenis/LightSensor#value)
+* [percent()](https://github.com/alextaujenis/LightSensor#percent)
+* [inverseValue()](https://github.com/alextaujenis/LightSensor#inversevalue)
+* [inversePercent()](https://github.com/alextaujenis/LightSensor#inversepercent)
 
 ##constructor(pin)
 Create a new sensor and pass in the Arduino pin number.
