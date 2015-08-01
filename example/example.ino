@@ -1,3 +1,7 @@
+// Arduino Light Sensor Example - Continuously print a light sensor reading
+// Copyright 2015 Alex Taujenis
+// MIT License
+
 #include <LightSensor.h>
 
 #define BAUD 115200
