@@ -2,7 +2,7 @@
 A simple library for photoresistors.
 
 ##Example Sketch
-0. Wire up a photoresistor to Arduino pin A0
+0. Wire up a photoresistor to Arduino **pin A0**
 0. Load the [example.ino]() onto your Arduino
 0. Connect to the serial prompt at **115200 BAUD**
 0. Watch a stream of the current light percentage

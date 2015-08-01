@@ -21,6 +21,6 @@ int LightSensor::inverseValue() {  // range: 1023 - 0
   return 1023 - value();
 }
 
-int LightSensor::inversePercent() {
+int LightSensor::inversePercent() { // range: 100 - 0
   return 100 - percent();
 }
