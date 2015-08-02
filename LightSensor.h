@@ -1,4 +1,4 @@
-// Arduino Light Sensor Library - A simple library for photoresistors
+// Arduino Light Sensor Library - A simple library for reading photoresistors
 // Copyright 2015 Alex Taujenis
 // MIT License
 

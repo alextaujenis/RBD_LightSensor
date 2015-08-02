@@ -1,5 +1,5 @@
 #Arduino Light Sensor Library
-A simple library for photoresistors.
+A simple library for reading photoresistors.
 
 ##Example Sketch
 0. Wire up a photoresistor to Arduino **pin A0**
