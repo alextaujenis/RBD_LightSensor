@@ -68,4 +68,4 @@ Returns an integer from 100 - 0 for the opposite of the current light level perc
     }
 
 #License
-This code is avaliable under the [MIT License](http://opensource.org/licenses/mit-license.php).
+This code is available under the [MIT License](http://opensource.org/licenses/mit-license.php).
