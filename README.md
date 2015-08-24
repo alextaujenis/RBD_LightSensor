@@ -26,11 +26,11 @@ A simple library for reading photoresistors.
 
 ##Public Methods
 
-* [constructor(pin)](https://github.com/alextaujenis/LightSensor#constructorpin)
-* [getValue()](https://github.com/alextaujenis/LightSensor#getvalue)
-* [getInverseValue()](https://github.com/alextaujenis/LightSensor#getinversevalue)
-* [getPercentValue()](https://github.com/alextaujenis/LightSensor#getpercentvalue)
-* [getInversePercentValue()](https://github.com/alextaujenis/LightSensor#getinversepercentvalue)
+* [constructor(pin)](#constructorpin)
+* [getValue()](#getvalue)
+* [getInverseValue()](#getinversevalue)
+* [getPercentValue()](#getpercentvalue)
+* [getInversePercentValue()](#getinversepercentvalue)
 
 ##constructor(pin)
 Create a new sensor and pass in the Arduino pin number.
