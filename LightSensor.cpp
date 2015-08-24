@@ -9,18 +9,18 @@ LightSensor::LightSensor(int pin) {
   _pin = pin;
 }
 
-int LightSensor::value() {  // range: 0 - 1023
+int LightSensor::getValue() {  // range: 0 - 1023
   return analogRead(_pin);
 }
 
-int LightSensor::percent() { // range: 0 - 100
-  return int(value() / 1023.0 * 100);
+int LightSensor::getInverseValue() {  // range: 1023 - 0
+  return 1023 - getValue();
 }
 
-int LightSensor::inverseValue() {  // range: 1023 - 0
-  return 1023 - value();
+int LightSensor::getPercentValue() { // range: 0 - 100
+  return int(getValue() / 1023.0 * 100);
 }
 
-int LightSensor::inversePercent() { // range: 100 - 0
-  return 100 - percent();
+int LightSensor::getInversePercentValue() { // range: 100 - 0
+  return 100 - getPercentValue();
 }

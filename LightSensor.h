@@ -10,10 +10,10 @@
 class LightSensor {
   public:
     LightSensor(int pint);
-    int value();          // 0 - 1023
-    int percent();        // 0 - 100
-    int inverseValue();   // 1023 - 0
-    int inversePercent(); // 100 - 0
+    int getValue();               // 0 - 1023
+    int getInverseValue();        // 1023 - 0
+    int getPercentValue();        // 0 - 100
+    int getInversePercentValue(); // 100 - 0
   private:
     int _pin;
 };

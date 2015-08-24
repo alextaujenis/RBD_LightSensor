@@ -12,10 +12,10 @@ A simple library for reading photoresistors.
 ##Public Methods
 
 * [constructor(pin)](https://github.com/alextaujenis/LightSensor#constructorpin)
-* [value()](https://github.com/alextaujenis/LightSensor#value)
-* [percent()](https://github.com/alextaujenis/LightSensor#percent)
-* [inverseValue()](https://github.com/alextaujenis/LightSensor#inversevalue)
-* [inversePercent()](https://github.com/alextaujenis/LightSensor#inversepercent)
+* [getValue()](https://github.com/alextaujenis/LightSensor#getvalue)
+* [getInverseValue()](https://github.com/alextaujenis/LightSensor#getinversevalue)
+* [getPercentValue()](https://github.com/alextaujenis/LightSensor#getpercentvalue)
+* [getInversePercentValue()](https://github.com/alextaujenis/LightSensor#getinversepercentvalue)
 
 ##constructor(pin)
 Create a new sensor and pass in the Arduino pin number.
@@ -23,7 +23,7 @@ Create a new sensor and pass in the Arduino pin number.
     #include <LightSensor.h>
     LightSensor light_sensor(A0);
 
-##value()
+##getValue()
 Returns an integer from 0 - 1023 for the current light level.
 
     #include <LightSensor.h>
@@ -31,21 +31,10 @@ Returns an integer from 0 - 1023 for the current light level.
     LightSensor light_sensor(A0);
 
     void loop() {
-      light_sensor.value();
+      light_sensor.getValue();
     }
 
-##percent()
-Returns an integer from 0 - 100 for the current light level percentage.
-
-    #include <LightSensor.h>
-
-    LightSensor light_sensor(A0);
-
-    void loop() {
-      light_sensor.percent();
-    }
-
-##inverseValue()
+##getInverseValue()
 Returns an integer from 1023 - 0 for the opposite of the current light level.
 
     #include <LightSensor.h>
@@ -53,10 +42,21 @@ Returns an integer from 1023 - 0 for the opposite of the current light level.
     LightSensor light_sensor(A0);
 
     void loop() {
-      light_sensor.inverseValue();
+      light_sensor.getInverseValue();
     }
 
-##inversePercent()
+##getPercentValue()
+Returns an integer from 0 - 100 for the current light level percentage.
+
+    #include <LightSensor.h>
+
+    LightSensor light_sensor(A0);
+
+    void loop() {
+      light_sensor.getPercentValue();
+    }
+
+##getInversePercentValue()
 Returns an integer from 100 - 0 for the opposite of the current light level percentage.
 
     #include <LightSensor.h>
@@ -64,7 +64,7 @@ Returns an integer from 100 - 0 for the opposite of the current light level perc
     LightSensor light_sensor(A0);
 
     void loop() {
-      light_sensor.inversePercent();
+      light_sensor.getInversePercentValue();
     }
 
 #License

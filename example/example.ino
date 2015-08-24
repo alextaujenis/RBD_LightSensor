@@ -12,5 +12,5 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(light_sensor.percent());
+  Serial.println(light_sensor.getPercentValue());
 }
