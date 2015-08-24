@@ -35,17 +35,27 @@ A simple library for reading photoresistors.
 ##constructor(pin)
 Create a new sensor and pass in the Arduino pin number.
 
+    LightSensor light_sensor(A0);
+
 ##getValue()
 Returns an integer from 0 - 1023 for the current light level.
+
+    light_sensor.getValue();
 
 ##getInverseValue()
 Returns an integer from 1023 - 0 for the opposite of the current light level.
 
+    light_sensor.getInverseValue();
+
 ##getPercentValue()
 Returns an integer from 0 - 100 for the current light level percentage.
 
+    light_sensor.getPercentValue();
+
 ##getInversePercentValue()
 Returns an integer from 100 - 0 for the opposite of the current light level percentage.
+
+    light_sensor.getInversePercentValue();
 
 #License
 This code is available under the [MIT License](http://opensource.org/licenses/mit-license.php).
