@@ -2,10 +2,10 @@
 // Copyright 2015 Alex Taujenis
 // MIT License
 
-#include <LightSensor.h>
+#include <RBD_LightSensor.h>
 
 #define BAUD 115200
-LightSensor light_sensor(A0);
+RBD::LightSensor light_sensor(A0);
 
 void setup() {
   Serial.begin(BAUD);
