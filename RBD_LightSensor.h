@@ -11,12 +11,20 @@ namespace RBD {
   class LightSensor {
     public:
       LightSensor(int pint);
-      int getValue();               // 0 - 1023
-      int getInverseValue();        // 1023 - 0
-      int getPercentValue();        // 0 - 100
-      int getInversePercentValue(); // 100 - 0
+      int getValue();
+      int getRawValue();
+      int getInverseValue();
+      int getPercentValue();
+      int getInversePercentValue();
+      void setFloor(int value);
+      void setCeiling(int value);
+      void resetFloor();
+      void resetCeiling();
     private:
       int _pin;
+      int _floor      = 0;
+      int _ceiling    = 1023;
+      bool _constrain = false;
   };
 }
 #endif

@@ -10,19 +10,62 @@ namespace RBD {
     _pin = pin;
   }
 
-  int LightSensor::getValue() {  // range: 0 - 1023
+  int LightSensor::getValue() {
+    if(_constrain) {
+      return constrain(map(getRawValue(), _floor, _ceiling, 0, 1023), 0, 1023);
+    }
+    else {
+      return getRawValue();
+    }
+  }
+
+  int LightSensor::getRawValue() {
     return analogRead(_pin);
   }
 
-  int LightSensor::getInverseValue() {  // range: 1023 - 0
+  int LightSensor::getInverseValue() {
     return 1023 - getValue();
   }
 
-  int LightSensor::getPercentValue() { // range: 0 - 100
+  int LightSensor::getPercentValue() {
     return int(getValue() / 1023.0 * 100);
   }
 
-  int LightSensor::getInversePercentValue() { // range: 100 - 0
+  int LightSensor::getInversePercentValue() {
     return 100 - getPercentValue();
+  }
+
+  void LightSensor::setFloor(int value) {
+    if(value > -1 && value < 1024) {
+      _floor = value;
+
+      if(_floor != 0) {
+        _constrain = true;
+      }
+      else if(_ceiling == 1023) {
+        _constrain = false;
+      }
+    }
+  }
+
+  void LightSensor::setCeiling(int value) {
+    if(value > -1 && value < 1024) {
+      _ceiling = value;
+
+      if(_ceiling != 1023) {
+        _constrain = true;
+      }
+      else if(_floor == 0) {
+        _constrain = false;
+      }
+    }
+  }
+
+  void LightSensor::resetFloor() {
+    setFloor(0);
+  }
+
+  void LightSensor::resetCeiling() {
+    setCeiling(1023);
   }
 }

@@ -31,6 +31,8 @@ A simple library for reading photoresistors.
 * [getInverseValue()](#getinversevalue)
 * [getPercentValue()](#getpercentvalue)
 * [getInversePercentValue()](#getinversepercentvalue)
+* [setFloor()](#setfloor)
+* [setCeiling()](#setceiling)
 
 ##constructor(pin)
 Create a new sensor and pass in the Arduino pin number.
