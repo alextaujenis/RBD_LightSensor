@@ -1,4 +1,5 @@
-// Arduino RBD Light Sensor Library - A simple library for reading photoresistors
+// Arduino RBD Light Sensor Library v1.0.0 - Read and calibrate photoresistors.
+// https://github.com/alextaujenis/RBD_LightSensor
 // Copyright 2015 Alex Taujenis
 // MIT License
 
@@ -10,7 +11,7 @@
 namespace RBD {
   class LightSensor {
     public:
-      LightSensor(int pint);
+      LightSensor(int pin);
       int getValue();
       int getRawValue();
       int getInverseValue();

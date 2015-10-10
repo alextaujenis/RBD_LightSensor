@@ -1,14 +1,14 @@
-// Arduino Light Sensor Example - Continuously print a light sensor reading
+// Arduino RBD Light Sensor Library v1.0.0 Example - Continuously print a light sensor reading percentage.
+// https://github.com/alextaujenis/RBD_LightSensor
 // Copyright 2015 Alex Taujenis
 // MIT License
 
 #include <RBD_LightSensor.h>
 
-#define BAUD 115200
 RBD::LightSensor light_sensor(A0);
 
 void setup() {
-  Serial.begin(BAUD);
+  Serial.begin(115200);
 }
 
 void loop() {
