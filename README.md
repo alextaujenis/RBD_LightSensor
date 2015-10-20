@@ -1,7 +1,7 @@
 #Arduino Light Sensor Library v1.0.1
 Read and calibrate photoresistors.
 
-* [Documentation](https://alextaujenis.github.io/RobotsBigData/compiled/docs-arduino-light-sensor.html)
+* [Documentation](https://alextaujenis.github.io/RobotsBigData/docs-arduino-light-sensor.html)
 * [Project Website](https://alextaujenis.github.io/RobotsBigData/)
 * [Report an Issue](https://github.com/alextaujenis/RBD_LightSensor/issues/new)*
 
