@@ -1,10 +1,10 @@
- LightSensor	KEYWORD1
- getValue	KEYWORD2
- getRawValue	KEYWORD2
- getInverseValue	KEYWORD2
- getPercentValue	KEYWORD2
- getInversePercentValue	KEYWORD2
- setFloor	KEYWORD2
- setCeiling	KEYWORD2
- resetFloor	KEYWORD2
- resetCeiling	KEYWORD2
+LightSensor	KEYWORD1
+getValue	KEYWORD2
+getRawValue	KEYWORD2
+getInverseValue	KEYWORD2
+getPercentValue	KEYWORD2
+getInversePercentValue	KEYWORD2
+setFloor	KEYWORD2
+setCeiling	KEYWORD2
+resetFloor	KEYWORD2
+resetCeiling	KEYWORD2

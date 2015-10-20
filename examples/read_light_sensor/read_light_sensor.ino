@@ -1,4 +1,4 @@
-// Arduino RBD Light Sensor Library v1.0.0 Example - Continuously print a light sensor reading percentage.
+// Arduino RBD Light Sensor Library v1.0.1 Example - Continuously print a light sensor reading.
 // https://github.com/alextaujenis/RBD_LightSensor
 // Copyright 2015 Alex Taujenis
 // MIT License
