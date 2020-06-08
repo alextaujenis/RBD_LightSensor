@@ -1,7 +1,6 @@
-// Arduino RBD Light Sensor Library v1.0.3 - Read and calibrate photoresistors.
+// Arduino RBD Light Sensor Library v1.0.4 - Read and calibrate photoresistors.
 // https://github.com/alextaujenis/RBD_LightSensor
-// Copyright 2015 Alex Taujenis
-// MIT License
+// Copyright (c) 2015 Alex Taujenis - MIT License
 
 #ifndef RBD_LIGHT_SENSOR_H
 #define RBD_LIGHT_SENSOR_H

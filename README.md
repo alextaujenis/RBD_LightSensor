@@ -1,4 +1,4 @@
-# Arduino Light Sensor Library v1.0.3
+# Arduino Light Sensor Library v1.0.4
 Read and calibrate photoresistors.
 
 * [Documentation](http://robotsbigdata.com/docs-arduino-light-sensor.html)
@@ -9,4 +9,4 @@ Read and calibrate photoresistors.
 \**Please include your Arduino make/model and IDE version when reporting an issue with this library.*
 
 # License
-This code is available under the [MIT License](http://opensource.org/licenses/mit-license.php).
+Copyright (c) 2015 Alex Taujenis - MIT License
